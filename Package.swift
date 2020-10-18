@@ -47,10 +47,10 @@ extension Target {
 let package = Package(
   name: "RxSwift",
   products: filterNil([
-    .library(name: "RxSwift", targets: ["RxSwift"]),
-    .library(name: "RxCocoa", targets: ["RxCocoa"]),
-    .library(name: "RxBlocking", targets: ["RxBlocking"]),
-    .library(name: "RxTest", targets: ["RxTest"]),
+    .library(name: "RxSwift", type: .dynamic, targets: ["RxSwift"]),
+    .library(name: "RxCocoa", type: .dynamic, targets: ["RxCocoa"]),
+    .library(name: "RxBlocking", type: .dynamic, targets: ["RxBlocking"]),
+    .library(name: "RxTest", type: .dynamic, targets: ["RxTest"]),
     .allTests(),
   ]),
   targets: filterNil([
